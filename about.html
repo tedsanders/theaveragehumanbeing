@@ -1,0 +1,121 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+
+<meta charset="utf-8">
+<title>About the average human being</title>
+<meta name="description" content="description">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta property="og:title" content="About the average human being">
+<meta property="og:type" content="website">
+<meta property="og:url" content="about.html">
+<meta property="og:image" content="">
+
+<link rel="manifest" href="site.webmanifest">
+<link rel="apple-touch-icon" href="icon.png">
+
+<meta name="theme-color" content="#fff8e7">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Average">
+<style>
+    #container, h1, h2, p, span, a, button, footer, #filler {
+    margin: 0 auto;
+    }
+    html {
+    height: -webkit-fill-available;
+    }
+    body {
+    background-color:#fff8e7;
+    font-family: 'Average', serif;
+    color: #4b2603;
+    line-height: 1.5;
+    margin: 0;
+    }
+    #container {
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    max-width: 20rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0.5rem;
+    }
+    h1 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    }
+    h2 {
+    display: inline;
+    font-size: 1rem;
+    font-weight: bold;
+    }
+    p {
+    margin-top: 1rem;
+    }
+    button {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: #C47EE4;
+    color: #fff;
+    font-size: 1.5rem;
+    border:none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    box-shadow: 0px 8px 15px #333;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    }
+    button:hover {
+    background-color: #2EE59D;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+
+    transform: translateY(-7px);
+    }
+    footer {
+    margin-top:auto;
+    padding: 1rem;
+    }
+</style>
+</head>
+
+<body>
+<div id='container'>
+<h1>
+<p style='font-weight:bold;'>The average human being...</p>
+<p>...made 0.00000003% of this website!</p>
+</h1>
+
+<p>
+Welcome to TheAverageHumanBeing.com, which chronicles how the average human being lives.
+</p><p>
+Although the average human being made 0.00000003% of this website, most of it was done by <a href='https://www.tedsanders.com'>Ted Sanders</a> and Ari Allyn-Feuer.
+</p><p>
+Our background color is <a href='https://web.archive.org/web/20161222101809/http://www.pha.jhu.edu/~kgb/cosspec/'>the average color the universe</a> (estimated to be #FFF8E7, or Cosmic Latte, by Johns Hopkins astronomers Karl Glazebrook and Ivan Baldry).
+</p><p>
+Our typeface is the typeface <a href='https://fonts.google.com/specimen/Average'>Average</a>, designed by typographer Eduardo Tunni.
+</p><p>
+The opinions expressed on this website are for general informational purposes only and are not intended to provide specific investment advice... but if they were providing specific investment advice, they might say to invest in low-fee index funds that aim to own the average portfolio and yield average returns. But no one is saying that here. Certainly not us.
+</p><p>
+In 2011, National Geographic reported that the world’s most typical person is a right-handed 28-year-old Han Chinese man who earns less than $12,000 per year and owns a cell phone but not a bank account.
+</p><p>
+For more great data on the how the average human being lives, check out <a href='https://ourworldindata.org'>Our World In Data</a>.
+</p>
+
+<button onclick='newFact();'>new fact</button>
+
+
+<footer>
+
+</footer>
+</div>
+
+<script>
+    var urls = ['eats_spiders.html', 'eats_cheese.html', 'drinks_cheese.html', 'drinks_spiders.html'];
+    function newFact() {
+        location.href = urls[Math.floor(Math.random() * urls.length)];
+    }
+</script>
+
+</body>
+</html>

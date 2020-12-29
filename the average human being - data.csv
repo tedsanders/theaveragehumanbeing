@@ -1,5 +1,12 @@
-url,fact,unit [Not implemented],source,note
-eats_spiders,eats 8 spiders per year,,Urban legend,Assumes all spiders are digested and none are inhaled
-eats_cheese,"eats 12,345 pounds of medium-aged roquefort blue cheese per human liftime",,Wikipedia,
+url,fact,unit,source,note
+eats_spiders,eats 8 spiders per year,,[Snopes](https://www.snopes.com/fact-check/swallow-spiders/),Assumes all spiders are digested and none are inhaled
+eats_cheese,"eats 12,345 pounds of medium-aged roquefort blue cheese per human liftime",,[Wikipedia](https://en.wikipedia.org/wiki/Roquefort),
 drinks_cheese,"drinks 12,345 pounds of melted roquefort blue cheese per human liftime",,,Assumes cheese never solidifies
 drinks_spiders,drinks 0 spiders per year,,,
+reads_facts,reads one fact per day,,"Let's try a source with a comma, and see if that breaks anything.","Let's try a multi-line note.
+After one linebreak.
+
+After two linebreaks.
+Did it work? ???? ??? ??? ????? ???? ?????
+
+I hope so."

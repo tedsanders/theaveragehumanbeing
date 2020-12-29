@@ -20,61 +20,61 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Average">
 <style>
     #container, h1, h2, p, span, a, button, footer, #filler {
-    margin: 0 auto;
+        margin: 0 auto;
     }
     html {
-    height: -webkit-fill-available;
+        height: -webkit-fill-available;
     }
     body {
-    background-color:#fff8e7;
-    font-family: 'Average', serif;
-    color: #4b2603;
-    line-height: 1.5;
-    margin: 0;
+        background-color:#fff8e7;
+        font-family: 'Average', serif;
+        color: #4b2603;
+        line-height: 1.5;
+        margin: 0;
     }
     #container {
-    min-height: 100vh;
-    min-height: -webkit-fill-available;
-    max-width: 20rem;
-    display: flex;
-    flex-direction: column;
-    padding: 0 0.5rem;
+        min-height: 100vh;
+        min-height: -webkit-fill-available;
+        max-width: 20rem;
+        display: flex;
+        flex-direction: column;
+        padding: 0 0.5rem;
     }
     h1 {
-    font-size: 1.5rem;
-    font-weight: normal;
+        font-size: 1.5rem;
+        font-weight: normal;
     }
     h2 {
-    display: inline;
-    font-size: 1rem;
-    font-weight: bold;
+        display: inline;
+        font-size: 1rem;
+        font-weight: bold;
     }
-    p {
-    margin-top: 1rem;
+    h2+p {
+        display:inline;
+        margin: 0 auto;
     }
     button {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    background-color: #C47EE4;
-    color: #fff;
-    font-size: 1.5rem;
-    border:none;
-    border-radius: 0.5rem;
-    padding: 0.5rem 1rem;
-    box-shadow: 0px 8px 15px #333;
-    transition: all 0.3s ease 0s;
-    cursor: pointer;
-    outline: none;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        background-color: #C47EE4;
+        color: #fff;
+        font-size: 1.5rem;
+        border:none;
+        border-radius: 0.5rem;
+        padding: 0.5rem 1rem;
+        box-shadow: 0px 8px 15px #333;
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        outline: none;
     }
     button:hover {
-    background-color: #2EE59D;
-    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
-
-    transform: translateY(-7px);
+        background-color: #2EE59D;
+        box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+        transform: translateY(-0.5rem);
     }
     footer {
-    margin-top:auto;
-    padding: 1rem;
+        margin-top:auto;
+        padding: 1rem;
     }
 </style>
 </head>
@@ -90,15 +90,15 @@
 
 
 
-<div><h2>Note:</h2><span> Assumes cheese never solidifies</span></div>
+<div><h2>Note:</h2> <p>Assumes cheese never solidifies</p></div>
 
 <footer>
-<a href="">About this website</a>
+<a href="about.html">About this website</a>
 </footer>
 </div>
 
 <script>
-    var urls = ['eats_spiders.html', 'eats_cheese.html', 'drinks_spiders.html'];
+    var urls = ['eats_spiders.html', 'eats_cheese.html', 'drinks_spiders.html', 'reads_facts.html'];
     function newFact() {
         location.href = urls[Math.floor(Math.random() * urls.length)];
     }
