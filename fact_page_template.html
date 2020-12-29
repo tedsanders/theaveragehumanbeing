@@ -85,7 +85,7 @@
 <p>...{fact}.</p>
 </h1>
 
-<button>new fact</button>
+<button onclick='newFact();'>new fact</button>
 
 {source_html}
 
@@ -95,6 +95,13 @@
 <a href="">About this website</a>
 </footer>
 </div>
-</body>
 
+<script>
+    var urls = {url_list};
+    function newFact() {{
+        location.href = urls[Math.floor(Math.random() * urls.length)];
+    }}
+</script>
+
+</body>
 </html>
