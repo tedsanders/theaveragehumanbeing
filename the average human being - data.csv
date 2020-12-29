@@ -1,3 +1,5 @@
-url,fact,unit,note,source
-test_url,test_fact,,,
-test_url2,test_fact2,,,
+url,fact,unit [Not implemented],source,note
+eats_spiders,eats 8 spiders per year,,Urban legend,Assumes all spiders are digested and none are inhaled
+eats_cheese,"eats 12,345 pounds of medium-aged roquefort blue cheese per human liftime",,Wikipedia,
+drinks_cheese,"drinks 12,345 pounds of melted roquefort blue cheese per human liftime",,,Assumes cheese never solidifies
+drinks_spiders,drinks 0 spiders per year,,,
