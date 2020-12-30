@@ -2,19 +2,15 @@
 <html class="no-js" lang="">
 
 <head>
-<script>
-    var urls = ['grapes', 'wine_grapes', 'table_grapes', 'dried_grapes', 'vineyards'];
-    location.href = urls[Math.floor(Math.random() * urls.length)];
-</script>
 
 <meta charset="utf-8">
-<title>The average human being </title>
+<title>The average human being drinks 11.3 pounds of wine grapes per year</title>
 <meta name="description" content="description">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<meta property="og:title" content="The average human being ">
+<meta property="og:title" content="The average human being drinks 11.3 pounds of wine grapes per year">
 <meta property="og:type" content="website">
-<meta property="og:url" content="index.html">
+<meta property="og:url" content="wine_grapes.html">
 <meta property="og:image" content="">
 
 <link rel="manifest" href="site.webmanifest">
@@ -108,7 +104,7 @@
 
 <h1>
 <p style='font-weight:bold;'>The average human being...</p>
-<p>....</p>
+<p>...drinks 11.3 pounds of wine grapes per year.</p>
 </h1>
 
 <button id='new-fact-button' onclick='newFact();'>
@@ -130,8 +126,8 @@
 </button>
 
 <div id='details-div'>
-    
-    
+    <div><h2>Source:</h2> <p><a href="http://oiv.int/public/medias/6782/oiv-2019-statistical-report-on-world-vitiviniculture.pdf">2019 Statistical Report on Vitiviniculture</a>, <a href="https://www.worldometers.info/world-population/">World Population Clock (2020)</a></p></div>
+    <div><h2>Note:</h2> <p>Assumes no wastage or net storage.</p></div>
 </div>
 
 </article>
@@ -143,7 +139,7 @@
 
 <script>
     // new fact button
-    var urls = ['grapes', 'wine_grapes', 'table_grapes', 'dried_grapes', 'vineyards'];
+    var urls = ['grapes', 'table_grapes', 'dried_grapes', 'vineyards'];
     function newFact() {
         location.href = urls[Math.floor(Math.random() * urls.length)];
     }
@@ -154,8 +150,8 @@
     shareButton.addEventListener('click', event => {
     if (navigator.share) {
     navigator.share({
-        title: 'The average human being ',
-        url: 'index.html'
+        title: 'The average human being drinks 11.3 pounds of wine grapes per year',
+        url: 'wine_grapes.html'
         }).then(() => {
         console.log('Thanks for sharing!');
         })
