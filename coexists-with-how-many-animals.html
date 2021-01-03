@@ -19,7 +19,7 @@
 <meta name="theme-color" content="#fff8e7">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Average">
 <style>
-    #container, h1, h2, p, span, a, button, button>div, footer, #filler {
+    #container, h1, h2, p, span, a, button, button>div, footer, #filler, article {
         margin: 0 auto;
     }
     html {
@@ -57,6 +57,9 @@
     h2+p {
         display:inline;
         margin: 0 auto;
+    }
+    article>p {
+        margin-top: 1rem;
     }
     #new-fact-button, #share-button {
         display: flex;
@@ -118,6 +121,8 @@
 <p style='font-weight:bold;'>The average human being...</p>
 <p>...coexists with 127,616,130,679 animals.</p>
 </h1>
+
+
 
 <button id='new-fact-button' onclick='newFact();'>
     <div class='spacer'></div>

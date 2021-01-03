@@ -1,5 +1,6 @@
 import markdown
 import string
+import textwrap
 
 def fact_page_url(fact_dict):
     if fact_dict['quantity unit'] == '':
@@ -20,7 +21,7 @@ def fact_page_fact(fact_dict):
     fact_string = ' '.join(fact_string.split())  # remove excess whitespace
     return fact_string
 
-def fact_page_html(url='', fact='', source='', note='', url_list=[], start_page=False, **kwargs):
+def fact_page_html(url='', fact='', source='', note='', url_list=[], start_page=False, about_page=False, **kwargs):
     # check that inputs are correct types
     if not isinstance(url, str):
         raise TypeError('url needs to be a string')
@@ -61,23 +62,32 @@ def fact_page_html(url='', fact='', source='', note='', url_list=[], start_page=
                 location.href = urls[Math.floor(Math.random() * urls.length)];
             </script>
             """
-        import textwrap
         start_page_script = textwrap.dedent(start_page_script)
     else:
         start_page_script = ''
 
+    if about_page:
+        fact_string = 'made 0.00000003% of this website'
+        with open('about.md', 'r') as about_file:
+            about_text = about_file.read()
+        about_text = f'<article>\n{markdown.markdown(about_text)}\n</article>'
+    else:
+        about_text = ''
+        fact_string = None
 
     # load template
     with open('fact_page_template.html', 'r') as fact_page_template_file:
         fact_page_template_string = fact_page_template_file.read()
 
     # return completed template
+    fact_string = fact_string if fact_string else fact
     return fact_page_template_string.format(
         url=url, 
-        fact=fact, 
+        fact=fact_string, 
         title=title, 
         source_html=source_html, 
         note_html=note_html, 
         url_list=url_list,
-        start_page_script=start_page_script
+        start_page_script=start_page_script,
+        about_text=about_text
         )
